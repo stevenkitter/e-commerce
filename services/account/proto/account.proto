@@ -1,0 +1,28 @@
+syntax = "proto3";
+package proto;
+option go_package = "github.com/stevenkitter/skills/services/account/proto";
+message Resp {
+    string message = 1;
+    string data = 2;
+    int32 code = 3;
+}
+message SignUpReq {
+    string email = 1;
+    string password = 2;
+}
+message LoginReq {
+    string email = 1;
+    string password = 2;
+}
+message VerifyEmailReq {
+    string email = 1;
+}
+
+message ResetPasswordReq {
+    string token = 1;
+    string password = 2;
+}
+
+service Account {
+    rpc SignUp(SignUpReq) returns (Resp);
+}
