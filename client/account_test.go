@@ -19,5 +19,6 @@ func TestClient_SignUp(t *testing.T) {
 	resp := cl.SignUp(req)
 	if resp.Code != 200 {
 		t.Errorf("TestClient_SignUp Code is not 200")
+		t.Errorf("err:%s", resp.Data)
 	}
 }
