@@ -38,5 +38,5 @@ jobs:
           name: test for all
           command: |
             sleep 20
-            netstat -an | grep 51000
+            netstat -an
             go test -v ./...
