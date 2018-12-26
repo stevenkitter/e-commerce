@@ -15,7 +15,7 @@ var (
 )
 
 const (
-	port = "51000"
+	port = ":51000"
 )
 
 func init() {
