@@ -22,7 +22,7 @@ jobs:
       - run:
           name: waiting for mariadb to be ready and init db user and database
           command: |
-            sh ./script/init_mariadb.sh
+            sh ./script/mariadb.sh
       - run:
           name: build to app
           command: |
