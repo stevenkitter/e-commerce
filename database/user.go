@@ -35,7 +35,7 @@ func (u *User) AfterCreate(tx *gorm.DB) (err error) {
 func (db *Database) CreateUser(email, password string) *pb.Resp {
 	user := &User{}
 	err := db.Mariadb.Where(&User{Email: email}).First(user).Error
-	if err != nil && gorm.IsRecordNotFoundError(err) {
+	if err != nil && !gorm.IsRecordNotFoundError(err) {
 		return common.WrongServerResp(err.Error())
 	}
 	if user.ID != 0 {
