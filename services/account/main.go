@@ -1,6 +1,7 @@
 package main
 
 import (
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	log "github.com/sirupsen/logrus"
 	"github.com/stevenkitter/skills/database"
 	"github.com/stevenkitter/skills/services/account/server"
