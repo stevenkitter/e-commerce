@@ -1,0 +1,41 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.11
+      - image: mariadb
+        environment:
+          MYSQL_ROOT_PASSWORD: jk123
+          MYSQL_ROOT_HOST: %
+          MYSQL_ALLOW_EMPTY_PASSWORD: true
+    working_directory: /go/src/github.com/stevenkitter/skills
+    environment:
+      MARIADB_HOST: 127.0.0.1
+      ACCOUNT_SERVER_ADDRESS: 127.0.0.1:51000
+      MARIADB_URL: "${MARIADB_HOST}:3306"
+      SKILLS_MARIADB_PWD: t6lA9yKMcsTbHQYN
+      MYSQL_ROOT_PASSWORD: jk123
+    steps:
+      - checkout
+      - run: go get -v -t -d ./...
+      - run: sudo apt update && sudo apt install -y mysql-client
+      - run:
+          name: waiting for mariadb to be ready and init db user and database
+          command: |
+            sh ./script/init_mariadb.sh
+      - run:
+          name: build to app
+          command: |
+            pwd=${PWD}
+            cd $pwd/services/account
+            CGO_ENABLE=0 GOOS=linux go build -o account_server .
+      - run:
+          name: start account_server
+          command: |
+            ./services/account/account_server
+          background: true
+      - run:
+          name: test for all
+          command: |
+            sleep 20
+            go test -v ./...

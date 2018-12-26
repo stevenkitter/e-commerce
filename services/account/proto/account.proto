@@ -1,11 +1,8 @@
 syntax = "proto3";
 package proto;
 option go_package = "github.com/stevenkitter/skills/services/account/proto";
-message Resp {
-    string message = 1;
-    string data = 2;
-    int32 code = 3;
-}
+import "common/proto/common.proto";
+
 message SignUpReq {
     string email = 1;
     string password = 2;
@@ -24,5 +21,5 @@ message ResetPasswordReq {
 }
 
 service Account {
-    rpc SignUp(SignUpReq) returns (Resp);
+    rpc SignUp(SignUpReq) returns (proto.Resp);
 }

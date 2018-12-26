@@ -1,0 +1,12 @@
+syntax = "proto3";
+package proto;
+option go_package = "github.com/stevenkitter/skills/services/message/proto";
+import "common/proto/common.proto";
+
+message SendEmailVerifyReq {
+    string email = 1;
+}
+
+service SMS {
+    rpc SendEmailVerify(SendEmailVerifyReq) returns (proto.Resp);
+}
