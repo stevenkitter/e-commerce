@@ -26,7 +26,7 @@ func init() {
 }
 
 func main() {
-	gorm, err := database.SkillsConn(skillsMariadbPassword)
+	gorm, err := database.SkillsConn(dbPath, skillsMariadbPassword)
 	if err != nil {
 		accountLogger.Panicf("database.SkillsConn() err:%v", err)
 	}

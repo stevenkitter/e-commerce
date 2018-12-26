@@ -3,7 +3,6 @@ package database
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
-	"os"
 )
 
 const (
@@ -27,11 +26,11 @@ func NewDatabase(path string, mariadb *gorm.DB) *Database {
 	return db
 }
 
-func connectDB(user, password, database string) (*gorm.DB, error) {
-	sqlUrl := fmt.Sprintf("%s:%s@tcp(%s)/%s?parseTime=True&loc=Local", user, password, os.Getenv("MARIADB_URL"), database)
+func connectDB(user, password, dbPath, database string) (*gorm.DB, error) {
+	sqlUrl := fmt.Sprintf("%s:%s@tcp(%s)/%s?parseTime=True&loc=Local", user, password, dbPath, database)
 	return gorm.Open("mysql", sqlUrl)
 }
 
-func SkillsConn(password string) (*gorm.DB, error) {
-	return connectDB("skills", password, "skills")
+func SkillsConn(dbPath, password string) (*gorm.DB, error) {
+	return connectDB("skills", password, dbPath, "skills")
 }
