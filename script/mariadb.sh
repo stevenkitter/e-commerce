@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-command="mysql -h ${MARIADB_HOST} -uroot -p${MYSQL_ROOT_PASSWORD} -e 'SELECT 1'"
-until ${command} ; do
+
+until mysql -h ${MARIADB_HOST} -uroot -p${MYSQL_ROOT_PASSWORD} -e "SELECT 1"; do
     >&2 echo "mariadb is unavailable - sleeping"
     sleep 2
 done
