@@ -1,0 +1,330 @@
+﻿WEBVTT
+
+1
+00:00:01.120 --> 00:00:05.150
+<v ->Hello, and welcome to the complete JavaScript course.</v>
+
+2
+00:00:05.150 --> 00:00:07.950
+I'm really excited to have you in this massive course.
+
+3
+00:00:07.950 --> 00:00:10.070
+And I promise, you made the right choice
+
+4
+00:00:10.070 --> 00:00:11.755
+by joining me in this adventure.
+
+5
+00:00:11.755 --> 00:00:14.263
+Because today, JavaScript is not only
+
+6
+00:00:14.263 --> 00:00:17.690
+the most popular programming language in the world,
+
+7
+00:00:17.690 --> 00:00:21.530
+but it also powers the entire modern internet.
+
+8
+00:00:21.530 --> 00:00:24.438
+Now without further ado, I wanna give you a quick overview
+
+9
+00:00:24.438 --> 00:00:26.405
+of how this course is organized,
+
+10
+00:00:26.405 --> 00:00:28.707
+the projects that we're gonna code together,
+
+11
+00:00:28.707 --> 00:00:32.310
+and also, what exactly you're gonna learn in this course.
+
+12
+00:00:33.200 --> 00:00:35.969
+So, the course contains a total of eight sections
+
+13
+00:00:35.969 --> 00:00:38.900
+with over 26 hours of content.
+
+14
+00:00:39.740 --> 00:00:41.860
+So we're gonna kick off the course in section two
+
+15
+00:00:41.860 --> 00:00:44.320
+with the very basics of the JavaScript language,
+
+16
+00:00:44.320 --> 00:00:47.430
+and programming in general, to give you a solid foundation
+
+17
+00:00:47.430 --> 00:00:49.540
+for the rest of the course.
+
+18
+00:00:49.540 --> 00:00:51.910
+After that, we're gonna take a look behind the scenes
+
+19
+00:00:51.910 --> 00:00:55.530
+of JavaScript and learn how the language actually works.
+
+20
+00:00:55.530 --> 00:00:56.960
+And this is gonna be a good mix
+
+21
+00:00:56.960 --> 00:00:58.367
+of theory and practical lectures,
+
+22
+00:00:58.367 --> 00:01:00.530
+designed to give you the knowledge
+
+23
+00:01:00.530 --> 00:01:03.290
+that many other JavaScript beginners simply don't have.
+
+24
+00:01:04.210 --> 00:01:06.069
+We then move on to our first project,
+
+25
+00:01:06.069 --> 00:01:07.875
+where we use JavaScript in the browser
+
+26
+00:01:07.875 --> 00:01:10.020
+for the very first time.
+
+27
+00:01:10.020 --> 00:01:11.903
+And so we're gonna code up this really cool game
+
+28
+00:01:11.903 --> 00:01:14.440
+where we make JavaScript actually interact
+
+29
+00:01:14.440 --> 00:01:15.890
+with an HTML webpage.
+
+30
+00:01:16.750 --> 00:01:19.550
+Alright, and after that, we're gonna take a deep dive
+
+31
+00:01:19.550 --> 00:01:22.190
+into the most advanced JavaScript concepts,
+
+32
+00:01:22.190 --> 00:01:24.008
+and that's objects and functions.
+
+33
+00:01:24.008 --> 00:01:27.330
+We're gonna talk about things like prototypal inheritance,
+
+34
+00:01:27.330 --> 00:01:30.931
+first-class functions, closures, and a lot more stuff.
+
+35
+00:01:30.931 --> 00:01:33.300
+Next up, we put everything we learned
+
+36
+00:01:33.300 --> 00:01:34.488
+up until this point together,
+
+37
+00:01:34.488 --> 00:01:36.780
+and code this beautiful budget app,
+
+38
+00:01:36.780 --> 00:01:39.090
+where you can track incomes and expenses
+
+39
+00:01:39.090 --> 00:01:42.012
+and calculate the global budget for any given month.
+
+40
+00:01:42.012 --> 00:01:45.190
+So in this project, you're gonna learn tons of new stuff
+
+41
+00:01:45.190 --> 00:01:47.430
+like how to structure and organize your code
+
+42
+00:01:47.430 --> 00:01:50.980
+and how to actually think about problems and solutions.
+
+43
+00:01:50.980 --> 00:01:53.246
+Then, starting from section number seven,
+
+44
+00:01:53.246 --> 00:01:56.560
+we're gonna start using next generation JavaScript.
+
+45
+00:01:56.560 --> 00:02:00.750
+So ES6, ES7, and even some ES8 features.
+
+46
+00:02:00.750 --> 00:02:03.016
+So we're gonna start by looking at what's new in ES6,
+
+47
+00:02:03.016 --> 00:02:08.016
+or ES2015, and then code some examples with the new syntax.
+
+48
+00:02:08.690 --> 00:02:09.930
+Next up, you're gonna learn
+
+49
+00:02:09.930 --> 00:02:12.960
+all about asynchronous JavaScript, which is used for things
+
+50
+00:02:12.960 --> 00:02:16.320
+like loading data from external servers with AJAX.
+
+51
+00:02:16.320 --> 00:02:18.195
+And then finally, to wrap up the course,
+
+52
+00:02:18.195 --> 00:02:20.110
+this is the biggest project,
+
+53
+00:02:20.110 --> 00:02:24.940
+coded entirely in ES6, ES7, and even ES8.
+
+54
+00:02:24.940 --> 00:02:27.520
+So we're fetching data from a real API here
+
+55
+00:02:27.520 --> 00:02:29.567
+and building this real-world app around it
+
+56
+00:02:29.567 --> 00:02:31.860
+using the latest technologies,
+
+57
+00:02:31.860 --> 00:02:34.860
+and also tools like NPM, Babel, and Webpack.
+
+58
+00:02:35.980 --> 00:02:38.250
+Now, in all of the videos, I always explain
+
+59
+00:02:38.250 --> 00:02:41.110
+every single detail of the JavaScript language
+
+60
+00:02:41.110 --> 00:02:42.630
+or of the technique that I'm using.
+
+61
+00:02:42.630 --> 00:02:45.270
+But sometimes, you may still have a question
+
+62
+00:02:45.270 --> 00:02:47.070
+about one of the topics that you're learning
+
+63
+00:02:47.070 --> 00:02:51.080
+in a particular video, or maybe you just run into a problem
+
+64
+00:02:51.080 --> 00:02:53.490
+with your code and need help fixing it.
+
+65
+00:02:53.490 --> 00:02:55.688
+Well, either way, you can always get help here
+
+66
+00:02:55.688 --> 00:02:58.240
+in the Udemy Q and A section.
+
+67
+00:02:58.240 --> 00:03:00.941
+So, at the bottom of the video that you're watching,
+
+68
+00:03:00.941 --> 00:03:03.580
+you will always find the questions section
+
+69
+00:03:03.580 --> 00:03:05.650
+for that specific video.
+
+70
+00:03:05.650 --> 00:03:07.025
+So whenever you have a question,
+
+71
+00:03:07.025 --> 00:03:08.960
+you can check if another student
+
+72
+00:03:08.960 --> 00:03:11.470
+has already asked the same question before,
+
+73
+00:03:11.470 --> 00:03:13.570
+and if not, well, you can just post your own.
+
+74
+00:03:13.570 --> 00:03:16.630
+And you will then get friendly and fast support
+
+75
+00:03:16.630 --> 00:03:18.360
+from me or from my team
+
+76
+00:03:18.360 --> 00:03:21.460
+so that you're back to writing code as fast as possible.
+
+77
+00:03:21.460 --> 00:03:23.810
+So I hope you're gonna have a ton of fun with the course,
+
+78
+00:03:23.810 --> 00:03:26.570
+that you become a real advanced JavaScript developer,
+
+79
+00:03:26.570 --> 00:03:29.270
+and that you will take your web development career
+
+80
+00:03:29.270 --> 00:03:30.451
+to the next level.
+
+81
+00:03:30.451 --> 00:03:33.690
+That's really all I want to achieve with this course.
+
+82
+00:03:33.690 --> 00:03:36.290
+And with that being said, let's finally get started.
+
