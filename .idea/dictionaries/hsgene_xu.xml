@@ -2,11 +2,14 @@
   <dictionary name="hsgene_xu">
     <words>
       <w>compb</w>
+      <w>firstvisit</w>
       <w>gorm</w>
       <w>grpc</w>
       <w>jinzhu</w>
       <w>mariadb</w>
+      <w>mozilla</w>
       <w>stevenkitter</w>
+      <w>udemy</w>
       <w>uroot</w>
     </words>
   </dictionary>
